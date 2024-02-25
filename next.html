@@ -5,77 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
 
+
 </head>
-<body>
+<body class = "pl-9 pr-9">
 
     <!-- create a dashboard ui with 3 sections, left side will be nav, middle section for content and right side for summaries -->
-    <div class="flex">
-        <div class="w-1/4 bg-gray-200 h-screen">
-            <nav class="p-4">
-                <ul>
-                    <li class="text-bold">Menu</li>
-                    <li class="p-2">
-                        <div class="relative flex items-center align-center">
-                            <input type="text" class="p-1 pl-8 w-full" placeholder="Search">
-                            <svg id="searchIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 absolute inset-y-0 left-0 p-1 pl-2 flex items-center text-red-400 cursor-pointer">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                            </svg>
-                        </div>
-                    </li>
-
-                    <li class="p-2">
-                        <p>
-
-                            Tasks
-                        </p>
-                        <ul>
-                            <li class="p-2">Upcoming</li>
-                            <li class="p-2">Today </li>
-                            <li class="p-2">Calendar </li>
-                            <li class="p-2">Sticky Wall </li>
-                        </ul>
-                    </li>
-
-                    <li class="p-2">Lists
-                        <ul>
-                            <li class="p-2">Personal</li>
-                            <li class="p-2">Work</li>
-                            <li class="p-2">List1</li>
-                            <li class="p-2">
-                                Add New List
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="p-2">Tags
-                        <ul class="flex w-full ">
-                            <li class="py-1 px-4 bg-teal-400 rounded-md">Tag 1</li>
-                            <li class="py-1 px-4 bg-red-400 rounded-md">Tag2</li>
-                            <li class="py-1 px-4 bg-gray-400 rounded-md">+Add Tag</li>
-
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="w-1/2 bg-gray-100 h-screen">
-            <div class="p-4">
-                <h1 class="text-2xl">Today</h1>
+    
+                <h1 class="text-2xl">Your tasks</h1>
                 <!-- Something that allows me to add a new task  -->
                 <div class="flex">
-                    <input id="taskInput" type="text" class="p-2 w-full" placeholder="Add a new task">
+                    <input id="taskInput" type="text" class="p-2 w-full" placeholder="Add">
                     <button id="addTaskBtn" class="bg-blue-500 text-white p-2">Add</button>
                 </div>
                 <ul id="taskList" class="mt-4">
                     <!-- Task items will be added dynamically here -->
                 </ul>
             </div>
-        </div>
-        <div class="w-1/4 bg-gray-200 h-screen">
-            <div class="p-4">
-                <h1 class="text-2xl">Task</h1>
-                <p class="text-gray-600">Some summaries here</p>
-            </div>
-        </div>
+          </div>
+        
     </div>
 
 <script>
